@@ -1,18 +1,32 @@
 <div class="container">
   <div class="row">
-	<h3>My Projects</h3>
-    <% @projects.each do |project| %>
+    <h3>My Projects</h3>
       <div class="col-md-4">
         <div class="card" style="background-color: #333; color: #fff; margin-bottom: 20px;">
           <div class="card-body">
-            <h5 class="card-title"><%= project.title %></h5>	
-            <p class="card-text"><%= project.description %></p>
-            <% unless project.github_link.blank? %>
-            	<a href="<%= project.github_link %>" class="btn btn-light">GitHub link</a>
-        		<% end %>
+            <h5 class="card-title">Currency Converter</h5>  
+            <p class="card-text">This currency converter gives live data convertion of currency. This has been by using API for information. This page also has a button called historic chart which gives you graph of how the prices has changed over the time. Used chartkick for shoing graphs.</p>
+              <a href="https://github.com/Nitin181901/currency_converter" class="btn btn-light">GitHub link</a>
           </div>
         </div>
       </div>
-    <% end %>
+      <div class="col-md-4">
+        <div class="card" style="background-color: #333; color: #fff; margin-bottom: 20px;">
+          <div class="card-body">
+            <h5 class="card-title">Weather-app using React</h5>  
+            <p class="card-text">This is a weather app, you can search and city or country and you will get the data about the city. Used API for data of live weather when searched. Handled error when location is not found. Gave beautiful css for it.</p>
+              <a href="https://github.com/Nitin181901/weather-app" class="btn btn-light">GitHub link</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="background-color: #333; color: #fff; margin-bottom: 20px;">
+          <div class="card-body">
+            <h5 class="card-title">TIC-TAC-TOE game using React</h5>  
+            <p class="card-text">Developed a game using react, gave backend code to show winner, we can also time travel to moves in past, gave beautful css for the game.</p>
+              <a href="https://github.com/Nitin181901/tic-tac-toe" class="btn btn-light">GitHub link</a>
+          </div>
+        </div>
+      </div>
   </div>
 </div>
